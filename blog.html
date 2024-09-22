@@ -1,68 +1,239 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-     <!-- google font cdn -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
- 
-     <!-- font awesome cdn -->
-     <script src="https://kit.fontawesome.com/f6d9aa913e.js" crossorigin="anonymous"></script>
- 
-     <!-- tailwind and daisyui cdn -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-     <script src="https://cdn.tailwindcss.com"></script>
-     <script>
-         tailwind.config = {
-           theme: {
-             extend: {
-               colors: {
-                 clifford: '#da373d',
-                 button: '#B4F461',
-                 primary: '#111111',
-                 secondary: 'rgba(17, 17, 17, 0.7)',
-               },
-               fontFamily: {
-                 'lexend': ["Lexend", 'sans-serif'],
-               }
-             }
-         }
-         }
-       </script>
-</head>
-<body class="font-lexend">
-     <!-- header section start -->
-     <header class="static">
-        <!-- navbar section -->
-         <section class="bg-[#F9F7F3]">
-              
-            <div class="lg:hidden flex justify-center items-center py-6">
-                <div class="flex gap-4 items-center">
-                    <img src="./assets/logo.png" class="h-12 w-12 border-2 border-dashed border-gray-400" alt="">
-                    <h1 class="text-primary font-semibold text-xl">Donate Bangladesh</h1>
-                </div>
-            </div>
-             <nav class="w-[90%] lg:container mx-auto pt-6 pb-16 flex justify-between items-center">
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-                <a href="./index.html"><button id="" class="btn bg-button text-primary text-xl font-semibold hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">Home</button></a>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/f6d9aa913e.js"
+      crossorigin="anonymous"
+    ></script>
 
-                <div class="hidden lg:flex gap-4 items-center">
-                    <img src="./assets/logo.png" class="h-12 w-12 border-2 border-dashed border-gray-400" alt="">
-                    <h1 class="text-primary font-semibold text-xl">Donate Bangladesh</h1>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="./assets/coin.png" class="h-5 w-5 border-2 border-dashed border-gray-400" alt="">
-                    <p class="text-xl text-secondary font-medium">
-                        <span>5000</span>
-                        <span>BDT</span>
-                    </p>
-                </div>
-             </nav>
-         </section>
-     </header>
+    <!-- tailwind and daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              button: "#B4F461",
+              primary: "#111111",
+              secondary: "rgba(17, 17, 17, 0.7)",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <!-- header section start -->
+    <header class="static">
+      <!-- navbar section -->
+      <section class="bg-[#F9F7F3]">
+        <div class="lg:hidden flex justify-center items-center py-6">
+          <div class="flex gap-4 items-center">
+            <img
+              src="./assets/logo.png"
+              class="h-12 w-12 border-2 border-dashed border-gray-400"
+              alt=""
+            />
+            <h1 class="text-primary font-semibold text-xl">
+              Donate Bangladesh
+            </h1>
+          </div>
+        </div>
+        <nav
+          class="w-[90%] lg:container mx-auto pt-6 pb-16 flex justify-between items-center"
+        >
+          <a href="./index.html"
+            ><button
+              id=""
+              class="btn bg-button text-primary text-xl font-semibold hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out"
+            >
+              Home
+            </button></a
+          >
+
+          <div class="hidden lg:flex gap-4 items-center">
+            <img
+              src="./assets/logo.png"
+              class="h-12 w-12 border-2 border-dashed border-gray-400"
+              alt=""
+            />
+            <h1 class="text-primary font-semibold text-xl">
+              Donate Bangladesh
+            </h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="./assets/coin.png"
+              class="h-5 w-5 border-2 border-dashed border-gray-400"
+              alt=""
+            />
+            <p class="text-xl text-secondary font-medium">
+              <span>5000</span>
+              <span>BDT</span>
+            </p>
+          </div>
+        </nav>
+      </section>
+    </header>
     <!-- header section end -->
-</body>
+    <main class="w-[90%] lg:container mx-auto space-y-6">
+      <h1 class="text-2xl lg:text-5xl my-6">Important FAQ?</h1>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a web page as a tree of
+            objects, allowing programming languages JavaScript to interact with
+            and manipulate HTML documents.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            To select an element from the DOM in JavaScript, you can use several
+            built-in methods depending on the type of selection you want to
+            make. Here are some common methods:
+          </p>
+          <ul>
+            <li>
+              1. getElementById() : Selects a single element by its id
+              attribute.
+            </li>
+            <li>
+              2. getElementsByClassName() : Selects all elements by its class
+              attribute.
+            </li>
+            <li>
+              3.getElementsByTagName() :Selects the first element that matches a
+              CSS selector.
+            </li>
+            <li>
+              4. querySelector(): Selects a single element by its id attribute.
+            </li>
+            <li>
+              5. querySelectorAll(): Selects all elements that match a CSS
+              selector.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of the DOM, and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique in JavaScript where you attach a
+            single event listener to a parent element, instead of adding event
+            listeners to individual child elements. This listener can then
+            handle events that are triggered by its child elements as they
+            bubble up through the DOM.
+          </p>
+          <p>
+            Attaching event listeners to many individual elements can consume
+            memory and affect performance, especially in dynamic or large lists.
+            Event delegation reduces the number of event listeners by utilizing
+            a single listener for multiple elements.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attributes and styles using the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can manipulate an element's attributes and styles in the DOM
+            using JavaScript by accessing and modifying the properties of DOM
+            elements.
+          </p>
+          <p>
+            You can get, set, or remove attributes of an element using the
+            following methods:
+          </p>
+
+          <p>
+            Getting an Attribute: You can use the getAttribute() method to get
+            the value of an attribute.
+          </p>
+          <p>
+            Setting an Attribute: You can use the setAttribute() method to
+            change or add an attribute to an element.
+          </p>
+          <p>
+            Removing an Attribute: To remove an attribute from an element, use
+            removeAttribute().
+          </p>
+          <p>
+            Manipulating Styles: You can manipulate an element’s style by
+            directly accessing the style property of the element, or by
+            modifying the element’s class attributes.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How can you dynamically create and append a new HTML element to the
+          DOM using JavaScript?
+        </div>
+        <div class="collapse-content">
+          <p>
+            To dynamically create and append a new HTML element to the DOM using
+            JavaScript, you can follow these steps:
+          </p>
+          <p>
+            1. Create the Element: Use the document.createElement() method to
+            create a new HTML element.
+          </p>
+
+          <p>
+            2. Set Attributes or Content: You can then set attributes, text, or
+            styles for this newly created element.
+          </p>
+          <p>
+            3. Append the Element to the DOM: Once the element is created and
+            configured, append it to an existing element in the DOM. This can be
+            done using methods like appendChild(), prepend(), insertBefore(),
+            etc.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
