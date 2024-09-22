@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+     <!-- google font cdn -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+ 
+     <!-- font awesome cdn -->
+     <script src="https://kit.fontawesome.com/f6d9aa913e.js" crossorigin="anonymous"></script>
+ 
+     <!-- tailwind and daisyui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+         tailwind.config = {
+           theme: {
+             extend: {
+               colors: {
+                 clifford: '#da373d',
+                 button: '#B4F461',
+                 primary: '#111111',
+                 secondary: 'rgba(17, 17, 17, 0.7)',
+               },
+               fontFamily: {
+                 'lexend': ["Lexend", 'sans-serif'],
+               }
+             }
+         }
+         }
+       </script>
+</head>
+<body class="font-lexend">
+     <!-- header section start -->
+     <header class="static">
+        <!-- navbar section -->
+         <section class="bg-[#F9F7F3]">
+              
+            <div class="lg:hidden flex justify-center items-center py-6">
+                <div class="flex gap-4 items-center">
+                    <img src="./assets/logo.png" class="h-12 w-12 border-2 border-dashed border-gray-400" alt="">
+                    <h1 class="text-primary font-semibold text-xl">Donate Bangladesh</h1>
+                </div>
+            </div>
+             <nav class="w-[90%] lg:container mx-auto pt-6 pb-16 flex justify-between items-center">
+
+                <a href="./index.html"><button id="" class="btn bg-button text-primary text-xl font-semibold hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">Home</button></a>
+
+                <div class="hidden lg:flex gap-4 items-center">
+                    <img src="./assets/logo.png" class="h-12 w-12 border-2 border-dashed border-gray-400" alt="">
+                    <h1 class="text-primary font-semibold text-xl">Donate Bangladesh</h1>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/coin.png" class="h-5 w-5 border-2 border-dashed border-gray-400" alt="">
+                    <p class="text-xl text-secondary font-medium">
+                        <span>5000</span>
+                        <span>BDT</span>
+                    </p>
+                </div>
+             </nav>
+         </section>
+     </header>
+    <!-- header section end -->
+</body>
+</html>
