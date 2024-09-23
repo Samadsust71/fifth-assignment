@@ -49,6 +49,16 @@ function makeDonation(donateInputId,totalDonateId,donatePlaceTitleId) {
  };
 
  function addRemoveClass(id) {
-       document.getElementById(id).classList.remove('bg-button','text-title');
+       document.getElementById(id).classList.remove('bg-button','text-primary');
        document.getElementById(id).classList.add('bg-white','border','border-secondary','text-secondary');
  }
+
+ function targetAttributeAdd(e) {
+    e.target.classList.remove('bg-white','border','border-secondary');
+    e.target.classList.add('bg-button','text-primary');
+ };
+
+ function showSection(hiddenId, showId) {
+    document.getElementById(hiddenId).classList.add('hidden');
+    document.getElementById(showId).classList.remove('hidden');
+ };
