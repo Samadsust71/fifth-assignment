@@ -49,13 +49,13 @@ function makeDonation(donateInputId,totalDonateId,donatePlaceTitleId) {
  };
 
  function addRemoveClass(id) {
-       document.getElementById(id).classList.remove('bg-button','text-primary');
-       document.getElementById(id).classList.add('bg-white','border','border-secondary','text-secondary');
+       document.getElementById(id).classList.remove('bg-button','text-primary','hover:bg-button');
+       document.getElementById(id).classList.add('bg-white','border','border-secondary','text-secondary','hover:bg-white');
  }
 
  function targetAttributeAdd(e) {
-    e.target.classList.remove('bg-white','border','border-secondary');
-    e.target.classList.add('bg-button','text-primary');
+    e.target.classList.remove('bg-white','border','border-secondary','hover:bg-white','text-secondary');
+    e.target.classList.add('bg-button','text-primary','hover:bg-button');
  };
 
  function showSection(hiddenId, showId) {
