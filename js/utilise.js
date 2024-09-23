@@ -6,15 +6,15 @@ function makeDonation(donateInputId,totalDonateId,donatePlaceTitleId) {
     const totalMoney = Number(totalMoneyEl.innerText);
     if (donation <= 0) {
         getEmptyInput(donateInputId);
-        return alert('Please give positive Input');
+        return alert('Please provide a positive input.');
     }
     else if ( donation > totalMoney) {
         getEmptyInput(donateInputId);
-        return alert('You have not enough money');
+        return alert('You do not have enough money.');
     }
     else if (isNaN(donation) ) {
         getEmptyInput(donateInputId);
-        return alert('Input should be a number'); 
+        return alert('The input should be a number.'); 
     }
     else
      totalMoneyEl.innerText = (totalMoney - donation).toFixed(2);
