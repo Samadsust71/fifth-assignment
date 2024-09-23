@@ -65,7 +65,6 @@
         >
           <a href="./blog.html"
             ><button
-              id=""
               class="btn bg-button text-primary text-xl font-semibold hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out"
             >
               Blog
@@ -101,13 +100,13 @@
       >
         <button
           id="donation-page-btn"
-          class="btn px-7 py-4 bg-button text-title"
+          class="btn px-7 py-4 bg-button text-title hover:bg-white transition-colors duration-200 ease-in-out"
         >
           Donation
         </button>
         <button
           id="history-page-btn"
-          class="btn px-8 py-4 text-secondary bg-white border border-secondary"
+          class="btn px-8 py-4 text-secondary bg-white border border-secondary hover:bg-white transition-colors duration-200 ease-in-out"
         >
           History
         </button>
@@ -115,7 +114,7 @@
     </header>
     <!-- header section end -->
     <!-- main section start -->
-    <main class="w-[90%] lg:container mx-auto space-y-8">
+    <main id="main-section" class="w-[90%] lg:container mx-auto space-y-8">
       <!-- first donate section start -->
       <section
         class="p-4 lg:p-8 border border-[rgba(17, 17, 17, 0.1)] rounded-[16px] flex flex-col lg:flex-row lg:justify-between gap-6"
@@ -135,11 +134,11 @@
             class="flex items-center gap-1 text-secondary bg-[#1111110d] py-3 px-4 max-h-fit max-w-fit rounded-lg"
           >
             <span><img class="h-5 w-5" src="./assets/coin.png" alt="" /></span>
-            <span>0</span>
+            <span id="donate-noakhali">0</span>
             <span>BDT</span>
           </p>
 
-          <h1 class="text-primary text-xl font-bold">
+          <h1 id="donate-noakhali-title" class="text-primary text-xl font-bold">
             Donate for Flood at Noakhali, Bangladesh
           </h1>
           <p class="text-secondary font-light">
@@ -150,37 +149,19 @@
             relief efforts and making a positive impact on the lives of those in
             need.
           </p>
-          <input
+          <input id="donate-noakhali-input"
             type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full font-light text-secondary font-lexend"
           />
 
           <button
-            onclick="my_modal_5.showModal()"        
+            id="donate-noakhali-btn"       
             class="btn bg-button hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out w-full font-semibold text-xl"
           >
             Donate Now
           </button>
-          <!-- modal start -->
-          <!-- Open the modal using ID.showModal() method -->
-          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle font-lexend">
-            <div class="modal-box text-center">
-              <h3 class="text-2xl font-bold mb-4">Congrates!</h3>
-              <div class="flex justify-center items-center"><img src="./assets/coin.png" alt=""></div>
-              <p class="pt-6 pb-4 text-sm">
-                You have Donated for Humankind
-              </p>
-              <h3 class="text-primary font-semibold pb-4">Successfully</h3>
-              <div class="modal-action text-center flex justify-center items-center">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn text-sm text-primary">Close Confirmation</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-          <!-- modal end -->
+         
         </div>
       </section>
       <!-- first donate section end -->
@@ -204,11 +185,11 @@
             class="flex items-center gap-1 text-secondary bg-[#1111110d] py-3 px-4 max-h-fit max-w-fit rounded-lg"
           >
             <span><img class="h-5 w-5" src="./assets/coin.png" alt="" /></span>
-            <span>500</span>
+            <span id="donate-feni">500</span>
             <span>BDT</span>
           </p>
 
-          <h1 class="text-primary text-xl font-bold">
+          <h1 id="donate-feni-title" class="text-primary text-xl font-bold">
             Donate for Flood Relief in Feni,Bangladesh
           </h1>
           <p class="text-secondary font-light">
@@ -221,37 +202,19 @@
             difference. Please consider donating today to assist those in urgent
             need.
           </p>
-          <input
+          <input id="donate-feni-input"
             type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full font-light text-secondary font-lexend"
           />
 
           <button
-            onclick="my_modal_7.showModal()"
+            id="donate-feni-btn"
             class="btn bg-button hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out w-full font-semibold text-xl"
           >
             Donate Now
           </button>
-           <!-- modal start -->
-          <!-- Open the modal using ID.showModal() method -->
-          <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle font-lexend">
-            <div class="modal-box text-center">
-              <h3 class="text-2xl font-bold mb-4">Congrates!</h3>
-              <div class="flex justify-center items-center"><img src="./assets/coin.png" alt=""></div>
-              <p class="pt-6 pb-4 text-sm">
-                You have Donated for Humankind
-              </p>
-              <h3 class="text-primary font-semibold pb-4">Successfully</h3>
-              <div class="modal-action text-center flex justify-center items-center">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn text-sm text-primary">Close Confirmation</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-          <!-- modal end -->
+          
         </div>
       </section>
       <!-- 2nd donate section end -->
@@ -275,11 +238,11 @@
             class="flex items-center gap-1 text-secondary bg-[#1111110d] py-3 px-4 max-h-fit max-w-fit rounded-lg"
           >
             <span><img class="h-5 w-5" src="./assets/coin.png" alt="" /></span>
-            <span>1000</span>
+            <span id="donate-quota">1000</span>
             <span>BDT</span>
           </p>
 
-          <h1 class="text-primary text-xl font-bold">
+          <h1 id="donate-quota-title" class="text-primary text-xl font-bold">
             Aid for Injured in the Quota Movement
           </h1>
 
@@ -295,21 +258,21 @@
             their time of need.
           </p>
 
-          <input
+          <input id="donate-quota-input"
             type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full font-light text-secondary font-lexend"
           />
 
           <button
-            onclick="my_modal_6.showModal()"
+            id="donate-quota-btn"
             class="btn bg-button hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out w-full font-semibold text-xl"
           >
             Donate Now
           </button>
            <!-- modal start -->
           <!-- Open the modal using ID.showModal() method -->
-          <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle font-lexend">
+          <dialog id="my_modal_6" class="modal modal-middle sm:modal-middle font-lexend">
             <div class="modal-box text-center">
               <h3 class="text-2xl font-bold mb-4">Congrates!</h3>
               <div class="flex justify-center items-center"><img src="./assets/coin.png" alt=""></div>
@@ -331,6 +294,14 @@
       <!-- 3rd donate section end -->
     </main>
     <!-- main section end -->
+     <!-- history container section -->
+      <section id="history-container" class="hidden w-[90%] lg:container mx-auto space-y-6">
+         <!-- nomuna div -->
+         
+          <!-- nomuna div end -->
+        
+      </section>
     <script src="./js/script.js"></script>
+    <script src="./js/utilise.js"></script>
   </body>
 </html>
