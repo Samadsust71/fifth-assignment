@@ -4,9 +4,13 @@ function makeDonation(donateInputId,totalDonateId,donatePlaceTitleId) {
     const donation = getInputValue(donateInputId);
     const totalDonate = getTotalDonation(totalDonateId);
     const totalMoney = Number(totalMoneyEl.innerText);
-    if (donation <= 0) {
+    if (donation == 0) {
         getEmptyInput(donateInputId);
-        return alert('Please provide a positive input.');
+        return alert('Please provide a valid input.');
+    }
+    else if (donation < 0) {
+        getEmptyInput(donateInputId);
+        return alert('The input should be a positive number.');
     }
     else if ( donation > totalMoney) {
         getEmptyInput(donateInputId);
